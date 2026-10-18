@@ -1,0 +1,22 @@
+# Runtime logs
+/alerts.log
+/seen_alerts.log
+/seen_correlations.log
+/logs/*.log
+/logs/*.backup
+
+# Local test data
+/test_dedup/
+
+# Old versions and backups
+/minisoc_final.sh
+/minisoc_functional_final.sh
+/minisoc_ui_final.sh
+/minisoc_backup.sh
+/minisoc.sh.before_dedup_fix
+/README.md.before_finish
+
+# Secrets and editor files
+.env
+*.swp
+*~
