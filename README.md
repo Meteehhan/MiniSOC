@@ -24,10 +24,25 @@ Linux, Bash ve standart komut satırı araçları.
 
 ## Çalıştırma
 
-Proje dizininde terminal açıp şu komutları çalıştır:
+### Sözdizimi Kontrolü ve Çalıştırma
 
-    bash -n minisoc.sh
-    bash minisoc.sh
+Proje dizininde terminali açarak aşağıdaki komutları çalıştırın.
+
+**1. Sözdizimini kontrol etme**
+
+```bash
+bash -n minisoc.sh
+```
+
+Bu komut, scripti çalıştırmadan Bash sözdizimi hatalarını kontrol eder. Hata yoksa terminale herhangi bir çıktı vermez.
+
+**2. MiniSOC'u çalıştırma**
+
+```bash
+bash minisoc.sh
+```
+
+Bu komut MiniSOC log analiz aracını çalıştırır.
 
 ## Sanal makine laboratuvarı
 
