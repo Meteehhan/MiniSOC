@@ -20,3 +20,12 @@
 .env
 *.swp
 *~
+
+# Live Kali lab test files
+/test_live_kali/
+/main
+
+# Local logs and backups
+/logs/
+/*.before_live_lab
+/logs/*.before_live_test

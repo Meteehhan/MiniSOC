@@ -14,10 +14,10 @@ printf "             ${CYAN}Security Log Analyzer${RESET}\n"
 printf "%s\n" "────────────────────────────────────────────────"
 printf "\n"
 
-incident_ip="192.168.50.20"
+incident_ip="192.168.56.20"
 
-first_seen=$(grep "Failed password.*$incident_ip" logs/auth.log | head -n 1 | awk '{print $3}')
-last_seen=$(grep "Failed password.*$incident_ip" logs/auth.log | tail -n 1 | awk '{print $3}')
+first_seen=$(grep "Failed password.*$incident_ip" logs/auth.log | head -n 1 | awk '{print $1}')
+last_seen=$(grep "Failed password.*$incident_ip" logs/auth.log | tail -n 1 | awk '{print $1}')
 username=$(grep "Failed password.*$incident_ip" logs/auth.log | head -n 1 | awk '{print $9}')
 attempts=$(grep "Failed password.*$incident_ip" logs/auth.log | wc -l)
 
@@ -86,8 +86,8 @@ printf "\n"
 
 do
 
-            user=$(echo "$line" | awk '{print $8}')
-            ip=$(echo  "$line" | awk '{print $10}')
+            user=$(echo "$line" | awk '{print $6}')
+            ip=$(echo  "$line" | awk '{print $8}')
 
             alert_key="$ip|invalid_user|$user"
              if grep -Fxq "$alert_key" seen_alerts.log

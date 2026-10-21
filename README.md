@@ -73,3 +73,11 @@ Canlı test için ağ, SSH ve log yapılandırmasının doğrulanması gerekir.
 ## Sorumluluk reddi
 
 Eğitim ve laboratuvar amaçlıdır. Yalnızca test yapma izni bulunan sistemlerde kullanılmalıdır.
+
+## Ekran Görüntüleri
+
+### MiniSOC Canlı Test Sonucu
+![MiniSOC canlı test sonucu](screenshots/minisoc-live-test.png)
+
+### Ubuntu SSH Kimlik Doğrulama Kayıtları
+![SSH kimlik doğrulama kayıtları](screenshots/ssh-auth-log.png)
